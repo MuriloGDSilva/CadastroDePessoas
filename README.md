@@ -1,2 +1,2 @@
 # CadastroDePessoas
- Programa simples para cadstro de pessoas
+ Programa simples para cadastro de pessoas
