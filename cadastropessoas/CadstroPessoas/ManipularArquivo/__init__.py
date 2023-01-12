@@ -2,8 +2,8 @@
 def cadastro(nome='xxxx',idade='xxxx',cpf='xxxx',tel='xxxxx-xxxx',email='xxxx',endereco='xxxxx'):
     try:
         arquivo = open('Funcionarios.txt','at+')
-        arquivo.write(f'\033[1mNome:\033[m{nome} {idade} Anos \033[1mCPF:\033[m {cpf} \n'
-                      f'\033[1mTel:\033[m (11){tel} \033[1mEmail\033[m: {email} \033[1mEndereço:\033[m {endereco}\n\033[m')
+        arquivo.write(f'\nId:{tamanho_arquivo()} Nome:{nome} {idade} Anos CPF:{cpf} \n'
+                      f'Tel: (11){tel} Email: {email} Endereço:{endereco}\n')
     except:
         print('ERRO!!')
     else:
@@ -20,3 +20,8 @@ def mostrarcadsatros(nome=''):
 
     else:
         arquivo.close()
+
+def gerador_id(arq=''):
+    arquivo = open('Funcionarios.txt')
+    tq = arquivo.readlines()
+    return len(tq)

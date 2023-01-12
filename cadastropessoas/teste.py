@@ -22,7 +22,7 @@ while True:
         cpf = formatcpf('CPF: ').strip()
         tel = formattel('Tel: ').strip()
         email = str(input('Email: ')).strip()
-        endereco = str(input('Endereço de residencia')).title().strip()
+        endereco = str(input('Endereço de residencia: ')).title().strip()
         cadastro(nome, idade, cpf, tel, email, endereco)
         linha(20)
         # Pessoas Cadastradas
